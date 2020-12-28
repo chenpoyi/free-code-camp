@@ -1,0 +1,76 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+html{
+  height: 100%;
+  background-color: #F9AD1B;
+}
+body{
+  height: 100%;
+  
+}
+#title {
+  font-size: 4rem;
+  margin: 0px;
+}
+#main {
+  width: 80%;
+  min-height: 100%;
+  background-color: #1d1160;
+  color: #e56020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Oswald;
+  padding: 5px;
+}
+@media (max-width: 450px) {
+  #image {
+    max-width: 100%;
+  }
+  #tribute-info{
+    max-width: 100%;
+    padding: 10px;
+  }
+  #tribute-career{
+  width: 100%;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+}
+}
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#image {
+  max-width: 80%;
+  margin-bottom: 0px;
+}
+#img-caption{
+  color: #BEC0C2;
+  margin: 0px;
+}
+#tribute-career{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#tribute-info{
+  max-width: 60%;
+}
+#tribute-accolades{
+  max-width: 60%;
+}
+#tribute-link{
+  color: #F9AD1B;
+}
+.section-title{
+  color: #F9AD1B;
+}
+
