@@ -1,0 +1,58 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link
+  href="https://fonts.googleapis.com/css?family=Oswald"
+  rel="stylesheet"
+  type="text/css"
+/>
+<main id="main">
+  <div id="header">
+  <h1 id="title">
+    A Leafs Fan Survey
+  </h1>
+  <img id="logo" src="https://mk0teamcolorcodtgc6i.kinstacdn.com/wp-content/uploads/2015/10/maple_leafs_logo_color.png"> 
+  </div>
+  <p id="description">
+    A short survey to get the opinions of Leafs fans ahead of the 2021 NHL season.
+  </p>
+  <form id="survey-form">
+    <label class="input-box" for="name" id="name-label">Name: </label>
+    <input id="name" type="text" placeholder="Please enter your name" required>
+    <label for="name" id="email-label">Email: </label>
+    <input id="email" type="email" placeholder="Please enter your email" required>
+    <label for="number" id="number-label">How many wins do you think the Leafs will win this year. (56 games season): </label>
+    <input id="number" type="number" min="0" max="56" placeholder="Please enter your answer" required>
+    <label for="dropdown" id="number-label">Who do you think will be the MVP for the Leafs this season? </label>
+    <select name="dropdown" id="dropdown" value="">
+      <option value=""></option>
+      <option value="matthews">Auston Matthews</option>
+      <option value="tavares">John Tavares</option>
+      <option value="marner">Mitch Marner</option>
+      <option value="nylander">William Nylander</option>
+      <option value="rielly">Morgan Rielly</option>
+      <option value="andersen">
+        Frederik Andersen</option>
+    </select>
+    <label for="playoffs">How many rounds will the Leafs win in the playoffs?</label>
+    <label for="0-rounds"><input id="0-rounds" type="radio" name="playoffs" value="0" checked> 0 rounds</label>
+    <label for="1-round"><input id="1-round" type="radio" name="playoffs" value="1"> 1 rounds</label>
+    <label for="2-rounds"><input id="2-rounds" type="radio" name="playoffs" value="2"> 2 rounds</label>
+    <label for="3-rounds"><input id="3-rounds" type="radio" name="playoffs" value="3"> 3 rounds</label>
+    <label for="4-rounds"><input id="4-rounds" type="radio" name="playoffs" value="4"> 4 rounds</label><br>
+    <label for="improvement">Which areas would you like to see the Leafs improve on this year?</label>
+    <label><input type="checkbox" value="offense" name="improvement" > Offense</label>
+    <label><input type="checkbox" value="defense" name="improvement"> Defense</label>
+    <label><input type="checkbox" value="goaltending" name="improvement"> Goaltending</label>
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Enter additional comments" option></textarea>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</main>
+<!--  
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
