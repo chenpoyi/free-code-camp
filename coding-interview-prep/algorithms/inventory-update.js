@@ -21,7 +21,7 @@ function updateInventory(arr1, arr2) {
       return 0;
     });
   return answer;
-}
+} 
 
 // Example inventory lists
 var curInv = [
