@@ -1,0 +1,141 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="technical-documentation-page.css" />
+
+<body>
+<nav id="navbar">
+  <header>Lotide Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#Get_Started"
+        >Get Started</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#assertArraysEqual"
+        >assertArraysEqual</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#assertEqual"
+        >assertEqual</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#assertObjectsEqual"
+        >assertObjectsEqual</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#countOnly"
+        >countOnly</a
+      >
+    </li>
+  </ul>
+</nav>
+<main id="main-doc">
+
+  <section id="Introduction" class="main-section">
+    <header class="header">Introduction</header>
+    <p>Lotide is a mini <a href="https://lodash.com/">Lodash</a> clone that I created as a part of the Lighthouse Labs Web Development Bootcamp. It is a Javascript library that provides utilities to simplify operations with arrays, numbers, objects, strings, etc.</p>
+    <ul>List of functions:
+      <li>assertArraysEqual</li>
+      <li>assertEqual</li>
+      <li>assertObjectsEqual</li>
+      <li>countOnly</li>
+    </ul>
+    
+  </section>
+  <section id="Get_Started" class="main-section">
+    <header class="header">Get Started</header>
+    <p>Follow the following steps to get started on Lotide:
+    <p>
+    <ol>
+      <li>
+        To install Lotide run the following command: </br>
+        <code>npm install @chenpoyi/lotide</code>
+      </li>
+      <li>
+        To require Lotide run the following command: </br>
+        <code>const _ = require('@chenpoyi/lotide');</code>
+      </li>
+      <li>
+        To call Lotide functions run the following command: </br>
+        <p><code>const results = _.tail([1, 2, 3]) // => [2, 3]
+          </code></p>
+      </li>
+    </ol>
+  </section>
+  <section id="assertArraysEqual" class="main-section">
+    <header class="header">assertArraysEqual</header>
+    <p><code>assertArraysEqual()</code>: determines if two arrays are equal and outputs appropriate messages.</p>
+    <div class="usage">
+      <header class="usage-header">Usage</header>
+      <code>
+
+        const first = [1,2,3]; </br>
+        const second = [1,2,3]; </br>
+        const third = [1,2,'3']; </br>
+        assertArraysEqual(first, second); //Should return true</br>
+        assertArraysEqual(first, third); //Should return false
+      </code>
+    </div>
+  </section>
+  <section id="assertEqual" class="main-section">
+    <header class="header">assertEqual</header>
+    <p><code>assertEqual()</code>: determines if two primitives are equal and outputs appropriate messages.</p>
+    <div class="usage">
+      <header class="usage-header">Usage</header>
+      <p><code>
+
+          assertEqual("Lighthouse Labs", "Bootcamp"); //Should return false </br>
+          assertEqual("Hi","Hi"); //Should return true </br>
+          assertEqual(1, 1); //Should return true </br>
+          assertEqual(1,2); //Should return false
+        </code></p>
+    </div>
+  </section>
+
+  <section id="assertObjectsEqual" class="main-section">
+    <header class="header">assertObjectsEqual</header>
+    <p><code>assertObjectsEqual()</code>: determines if two objects are equal and outputs appropriate messages.</p>
+    <div class="usage">
+      <header class="usage-header">Usage</header>
+      <p><code>
+
+          const obj1 = {a: '123', b: '567'}; </br>
+          const obj2 = {a: '123', b: '567'}; </br>
+          const obj3 = {a: '123', c: '567'}; </br>
+          assertObjectsEqual(obj1, obj2); //Should return true </br>
+          assertObjectsEqual(obj1, obj3); //Should return false
+        </code></p>
+    </div>
+  </section>
+
+  <section id="countOnly" class="main-section">
+    <header class="header">countOnly</header>
+    <p><code>countOnly()</code>: returns the number of occurences of a specific item in an array.</p>
+    <div class="usage">
+      <header class="usage-header">Usage</header>
+      <p> <code>
+          const firstNames = [
+          "Karl",
+          "Salima",
+          "Agouhanna",
+          "Fang",
+          "Kavith",
+          "Jason",
+          "Salima",
+          "Fang",
+          "Joe"
+          ]; </br>
+          countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }); //Should equal undefined.
+          </br>
+          countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }); //Should equal to 2.
+        </code> </p>
+    </div>
+  </section>
+
+</main>
+</body>

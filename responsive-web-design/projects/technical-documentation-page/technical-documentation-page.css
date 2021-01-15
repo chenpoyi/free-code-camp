@@ -1,0 +1,67 @@
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background-color: beige;  
+}
+code {
+  padding: 5px;
+  background-color: #C6C6C6;
+  
+}
+#navbar {
+  position: fixed;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  min-width: 300px;
+  border-style: solid;
+}
+#navbar ul{
+  padding: 0px;
+}
+#navbar li{
+  padding: 5px;
+  border-top: 1px solid;
+  list-style: none;
+}
+#navbar a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+  padding-left: 30px;
+}
+
+nav > header {
+  font-size: 30px;
+}
+
+.header {
+  font-size: 30px;
+}
+
+.usage-header {
+  font-size: 20px;
+}
+
+@media (max-width: 450px) {
+ body{
+    display: flex;
+    flex-direction: column;
+  } 
+  #navbar {
+    position: static;
+  height: 50%;
+    width: 100%;
+  border-style: solid;
+}
+  #main-doc {
+  position: static;
+  padding-left: 30px;
+    margin-left: 0px;
+  padding-left: 0px;
+}
+}
