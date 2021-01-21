@@ -1,9 +1,7 @@
 const JSX = (
   <div>
-    <h1>Hello World</h1>
-    <p>Lets render this to the DOM</p>
+    <h1>This is a block of JSX</h1>
+    <p>Here's a subtitle</p>
+    {/*This is a comment. */}
   </div>
 );
-// Change code below this line
-
-ReactDOM.render(JSX, document.getElementById('challenge-node'));
